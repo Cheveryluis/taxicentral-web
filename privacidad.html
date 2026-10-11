@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad de TaxiCentral</title>
+<meta name="description" content="Qué datos maneja TaxiCentral, dónde se guardan y qué sale de la computadora.">
+<meta name="theme-color" content="#161622">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="icon" type="image/svg+xml" href="img/logo.svg">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header class="encabezado">
+  <div class="contenedor">
+    <a class="marca" href="./" aria-label="TaxiCentral, inicio">
+      <img src="img/logo.svg" alt="" width="34" height="34">
+      <span>Taxi<b>Central</b></span>
+    </a>
+    <a class="boton boton-secundario boton-chico" href="./" style="margin-left:auto">Volver al inicio</a>
+  </div>
+</header>
+
+<main class="contenedor documento">
+
+<h1>Política de privacidad de TaxiCentral</h1>
+<p class="fecha">Última actualización: 11 de octubre de 2026</p>
+
+<p>TaxiCentral es un programa para Windows, desarrollado por Cheveryluis, que usan las centrales de taxis para despachar carreras. Esta política explica qué datos maneja el programa, dónde se guardan y qué sale de la computadora.</p>
+<p>Para la app de Android que envía las llamadas del celular a TaxiCentral, ver la <a href="movil/privacidad.html">política de privacidad de TaxiCentral Móvil</a>.</p>
+
+<h2>En resumen</h2>
+<ul class="resumen">
+  <li>Los datos de la central (clientes, conductores, carreras y llamadas) se guardan solo en la computadora donde está instalado TaxiCentral. No se suben a internet y el desarrollador no tiene acceso a ellos.</li>
+  <li>Por internet solo viaja lo necesario para validar la licencia: la clave de licencia, un identificador de la computadora y la versión del programa.</li>
+  <li>No tiene publicidad, analíticas ni seguimiento, y no vende ni comparte datos.</li>
+</ul>
+
+<h2>Datos que se guardan en la computadora</h2>
+<p>TaxiCentral guarda todo en la carpeta <code>%LOCALAPPDATA%\TaxiCentral</code> de la cuenta de Windows donde se usa:</p>
+<ul>
+  <li><strong>Clientes:</strong> nombre, teléfonos, sector, dirección, referencia y fecha del último pedido.</li>
+  <li><strong>Conductores:</strong> número de unidad, nombres y apellidos, cédula, celular, correo, placa, marca, modelo y año del vehículo, cooperativa, si es socio y la hora de su última salida.</li>
+  <li><strong>Carreras:</strong> fecha y hora, cliente, teléfono, sector, dirección, referencia, unidad, tiempo estimado, nota y estado (despachada, cancelada o desatendida).</li>
+  <li><strong>Registro de actividad:</strong> qué clientes y conductores se agregaron, cambiaron o borraron, y cuándo.</li>
+  <li><strong>Celulares emparejados:</strong> el nombre de cada celular y una huella de su clave de acceso (no la clave misma).</li>
+  <li><strong>Licencia:</strong> la clave de licencia, el nombre de la empresa, la fecha hasta la que está pagada y cuándo se validó por última vez.</li>
+  <li><strong>Registro de errores:</strong> detalles técnicos de las fallas del programa, para poder diagnosticarlas.</li>
+</ul>
+<p>Estos datos los escribe el personal de la central. La central (la empresa que usa TaxiCentral) es la responsable de ellos: decide qué registra y cuánto tiempo lo conserva.</p>
+
+<h2>Llamadas</h2>
+<ul>
+  <li><strong>Centralita telefónica:</strong> si la central conecta su centralita a la computadora, TaxiCentral lee por ese cable el número de cada llamada que entra y la línea por la que suena, para mostrarlo en Despacho y buscar al cliente.</li>
+  <li><strong>Celulares con TaxiCentral Móvil:</strong> TaxiCentral recibe por la red Wi‑Fi local los datos de las llamadas que entran a los celulares emparejados: número, hora, estado, duración y si fue una llamada normal o de WhatsApp.</li>
+  <li>Las llamadas que se ven en pantalla no se guardan en disco. Un número queda guardado solo si con él se registra una carrera o un cliente.</li>
+</ul>
+
+<h2>Qué sale por internet</h2>
+<ul>
+  <li><strong>Validación de la licencia.</strong> Al abrir el programa y cada 10 minutos mientras está abierto, TaxiCentral envía al servidor de licencias del desarrollador la clave de licencia, el identificador que Windows asigna a la computadora y la versión del programa. El servidor contesta con el nombre de la empresa, la fecha hasta la que está pagada y si la licencia está activa. También anota qué computadoras usan cada licencia y cuándo se validaron por última vez, para respetar el número de equipos de cada empresa.</li>
+  <li><strong>Cerrar sesión.</strong> Al cerrar sesión en TaxiCentral, se le pide al servidor que borre el registro de esa computadora.</li>
+  <li><strong>Comprobación de conexión.</strong> Para saber si hay internet, TaxiCentral abre una conexión con un servidor público de Google (8.8.8.8), sin enviarle datos.</li>
+  <li>El servidor de licencias funciona en Supabase. Como cualquier servicio en internet, el proveedor puede registrar la dirección IP de las conexiones en sus registros técnicos.</li>
+  <li>Ningún dato de clientes, conductores, carreras o llamadas se envía por internet.</li>
+</ul>
+
+<h2>Red local</h2>
+<p>Para recibir las llamadas de los celulares, TaxiCentral espera conexiones en el puerto 5050 y contesta en el puerto 5051 a los celulares que buscan la computadora, con el nombre de la computadora. Solo acepta celulares emparejados con el código de 6 dígitos que muestra en pantalla.</p>
+
+<h2>Seguridad</h2>
+<ul>
+  <li>Los datos quedan en la carpeta de la cuenta de Windows. Recomendamos proteger esa cuenta con contraseña y que solo la use el personal de la central.</li>
+  <li>La conexión con los celulares no usa cifrado adicional: los datos viajan solo dentro de la red Wi‑Fi local. Recomendamos una red Wi‑Fi protegida con contraseña (WPA2 o WPA3) a la que solo tenga acceso el personal de la central.</li>
+  <li>La comunicación con el servidor de licencias va cifrada (HTTPS).</li>
+  <li>Las copias de seguridad de los datos son responsabilidad de la central.</li>
+</ul>
+
+<h2>Cuánto tiempo se guardan y cómo borrarlos</h2>
+<ul>
+  <li><strong>En la computadora:</strong> los datos se guardan hasta que la central los borra desde el programa. Para borrar todo, cierra TaxiCentral y borra la carpeta <code>%LOCALAPPDATA%\TaxiCentral</code>.</li>
+  <li><strong>En el servidor de licencias:</strong> los datos de la empresa se guardan mientras use TaxiCentral. El registro de cada computadora se borra al cerrar sesión, o cuando la empresa lo pida.</li>
+  <li><strong>Si llamaste a una central de taxis</strong> y quieres que borre tu número o tus datos, pídeselo a esa central; también puedes escribirnos al correo de abajo.</li>
+</ul>
+
+<h2>Niños</h2>
+<p>TaxiCentral es una herramienta de trabajo para centrales de taxis y no está dirigida a menores de edad.</p>
+
+<h2>Cambios en esta política</h2>
+<p>Si esta política cambia, la nueva versión se publicará en esta página con su fecha de actualización.</p>
+
+<h2>Contacto</h2>
+<p>Cheveryluis<br>Correo: <a href="mailto:luis.anguisaca.dev@gmail.com">luis.anguisaca.dev@gmail.com</a></p>
+
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <span>© 2026 Cheveryluis</span>
+    <nav aria-label="Legal">
+      <a href="privacidad.html">Política de privacidad de TaxiCentral</a>
+      <a href="movil/privacidad.html">Política de privacidad de TaxiCentral Móvil</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

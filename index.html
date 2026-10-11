@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TaxiCentral · Sistema de despacho para centrales de taxis</title>
+<meta name="description" content="TaxiCentral es el programa de despacho para centrales de taxis: recibe las llamadas de la centralita y del celular, muestra quién llama, elige la unidad que más espera y guarda cada carrera.">
+<meta name="theme-color" content="#161622">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="icon" type="image/svg+xml" href="img/logo.svg">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="TaxiCentral · Sistema de despacho para centrales de taxis">
+<meta property="og:description" content="Recibe las llamadas de la centralita y del celular, muestra quién llama y elige la unidad que más espera.">
+<meta property="og:image" content="https://cheveryluis.github.io/taxicentral-web/img/compartir.png">
+<meta property="og:url" content="https://cheveryluis.github.io/taxicentral-web/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+<header class="encabezado">
+  <div class="contenedor">
+    <a class="marca" href="./" aria-label="TaxiCentral, inicio">
+      <img src="img/logo.svg" alt="" width="34" height="34">
+      <span>Taxi<b>Central</b></span>
+    </a>
+    <nav class="menu" aria-label="Secciones">
+      <a href="#funciones">Funciones</a>
+      <a href="#llamadas">Llamadas</a>
+      <a href="#movil">App móvil</a>
+      <a href="#requisitos">Requisitos</a>
+    </nav>
+    <a class="boton boton-principal boton-chico" href="#contacto">Contacto</a>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <section class="portada">
+    <div class="contenedor">
+      <span class="etiqueta">Para centrales y cooperativas de taxis</span>
+      <h1>Cuando suena el teléfono, ya sabes quién llama.</h1>
+      <p class="bajada">TaxiCentral es el programa de despacho para tu central: recibe las llamadas de la centralita y del celular, busca al cliente por su número, elige entre las unidades disponibles la que más tiempo lleva esperando y guarda cada carrera.</p>
+      <div class="acciones">
+        <a class="boton boton-principal" href="#contacto">Pide una demostración</a>
+        <a class="boton boton-secundario" href="#funciones">Ver cómo funciona</a>
+      </div>
+      <div class="ventana">
+        <div class="ventana-barra" aria-hidden="true">
+          <img src="img/logo.svg" alt="">TaxiCentral
+          <div class="botones"><span>&#8212;</span><span>&#9744;</span><span>&#10005;</span></div>
+        </div>
+        <img src="img/capturas/despacho.webp" width="1920" height="1000" fetchpriority="high"
+             alt="Pantalla Despacho de TaxiCentral: arriba, las llamadas que entran con el número, el código y el nombre del cliente; abajo, las carreras en curso con la unidad asignada y el tiempo de espera.">
+      </div>
+    </div>
+  </section>
+
+  <section class="puntos" aria-label="Puntos fuertes">
+    <div class="contenedor">
+      <ul>
+        <li>
+          <div class="icono icono-azul"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 2 16 8 22 8"/><line x1="22" x2="16" y1="2" y2="8"/><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <strong>Todas las llamadas</strong>
+          <span>Centralita, celular y WhatsApp en una sola tabla.</span>
+        </li>
+        <li>
+          <div class="icono icono-amarillo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="10" x2="14" y1="2" y2="2"/><line x1="12" x2="15" y1="14" y2="11"/><circle cx="12" cy="14" r="8"/></svg></div>
+          <strong>Turnos justos</strong>
+          <span>Entre las unidades disponibles, elige la que más espera.</span>
+        </li>
+        <li>
+          <div class="icono icono-verde"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg></div>
+          <strong>Tus datos, en tu PC</strong>
+          <span>Clientes, conductores y carreras no salen de la central.</span>
+        </li>
+        <li>
+          <div class="icono icono-rojo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h.01"/><path d="M8.5 16.43a5 5 0 0 1 7 0"/><path d="M5 12.86a10 10 0 0 1 5.17-2.69"/><path d="M19 12.86a10 10 0 0 0-2-1.52"/><path d="M2 8.82a15 15 0 0 1 4.18-2.64"/><path d="M22 8.82a15 15 0 0 0-11.29-3.76"/><path d="m2 2 20 20"/></svg></div>
+          <strong>Sigue sin internet</strong>
+          <span>Si se corta la conexión, la central sigue despachando.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="seccion seccion-alterna" id="funciones">
+    <div class="contenedor">
+      <header>
+        <h2>Todo el despacho en un solo programa</h2>
+        <p>Desde la llamada hasta las estadísticas del mes, sin cuadernos ni hojas sueltas.</p>
+      </header>
+
+      <div class="pestanas" role="tablist" aria-label="Funciones de TaxiCentral">
+        <button role="tab" id="tab-despacho" aria-controls="panel-despacho" aria-selected="true">Despacho</button>
+        <button role="tab" id="tab-clientes" aria-controls="panel-clientes" aria-selected="false" tabindex="-1">Clientes</button>
+        <button role="tab" id="tab-conductores" aria-controls="panel-conductores" aria-selected="false" tabindex="-1">Conductores</button>
+        <button role="tab" id="tab-historial" aria-controls="panel-historial" aria-selected="false" tabindex="-1">Historial</button>
+        <button role="tab" id="tab-estadisticas" aria-controls="panel-estadisticas" aria-selected="false" tabindex="-1">Estadísticas</button>
+        <button role="tab" id="tab-celulares" aria-controls="panel-celulares" aria-selected="false" tabindex="-1">Celulares</button>
+      </div>
+
+      <div class="panel" role="tabpanel" id="panel-despacho" aria-labelledby="tab-despacho">
+        <div class="texto">
+          <h3>Despacho</h3>
+          <p>Cada llamada que entra aparece al instante con el número, el código y el nombre del cliente.</p>
+          <ul>
+            <li>Con un clic, la llamada pasa a Carreras en Curso; si el cliente está registrado, con su dirección y referencia.</li>
+            <li>Escribe las unidades disponibles y TaxiCentral elige la que más tiempo lleva sin carrera.</li>
+            <li>Un cronómetro por carrera se pone en rojo si pasa el tiempo prometido.</li>
+            <li>Finaliza, cancela o marca como desatendida y queda en el historial.</li>
+          </ul>
+        </div>
+        <div class="ventana"><img src="img/capturas/despacho.webp" width="1920" height="1000" loading="lazy" alt="Pantalla Despacho con llamadas entrantes y carreras en curso."></div>
+      </div>
+
+      <div class="panel" role="tabpanel" id="panel-clientes" aria-labelledby="tab-clientes" hidden>
+        <div class="texto">
+          <h3>Clientes</h3>
+          <p>La ficha de cada cliente: dos teléfonos, sector, dirección y referencia.</p>
+          <ul>
+            <li>Búsqueda por nombre, teléfono, dirección o cualquier otra columna.</li>
+            <li>Envía un cliente a Despacho sin volver a escribir sus datos.</li>
+            <li>Muestra los clientes que llevan más de un año sin pedir.</li>
+            <li>Descarga la lista a Excel.</li>
+          </ul>
+        </div>
+        <div class="ventana"><img src="img/capturas/clientes.webp" width="1920" height="1000" loading="lazy" alt="Pantalla Clientes con la lista de clientes, sus teléfonos, sector, dirección y referencia."></div>
+      </div>
+
+      <div class="panel" role="tabpanel" id="panel-conductores" aria-labelledby="tab-conductores" hidden>
+        <div class="texto">
+          <h3>Conductores</h3>
+          <p>Cada unidad con los datos del conductor y del vehículo.</p>
+          <ul>
+            <li>Cédula, celular, correo, placa, marca, modelo y año.</li>
+            <li>Separa socios y no socios de la cooperativa.</li>
+            <li>Lleva la hora de la última salida de cada unidad para repartir los turnos.</li>
+            <li>Descarga la lista a Excel.</li>
+          </ul>
+        </div>
+        <div class="ventana"><img src="img/capturas/conductores.webp" width="1920" height="1000" loading="lazy" alt="Pantalla Conductores con unidad, nombres, cédula, celular, placa, marca, modelo y año."></div>
+      </div>
+
+      <div class="panel" role="tabpanel" id="panel-historial" aria-labelledby="tab-historial" hidden>
+        <div class="texto">
+          <h3>Historial</h3>
+          <p>Todas las carreras de cualquier día, con su estado.</p>
+          <ul>
+            <li>Cuenta las despachadas, desatendidas y canceladas del día.</li>
+            <li>Búsqueda por cliente, teléfono, unidad o dirección.</li>
+            <li>Descarga a Excel.</li>
+          </ul>
+        </div>
+        <div class="ventana"><img src="img/capturas/historial.webp" width="1920" height="1000" loading="lazy" alt="Pantalla Historial con las carreras de un día: hora, cliente, dirección, unidad y tiempo."></div>
+      </div>
+
+      <div class="panel" role="tabpanel" id="panel-estadisticas" aria-labelledby="tab-estadisticas" hidden>
+        <div class="texto">
+          <h3>Estadísticas</h3>
+          <p>Cómo trabaja tu central, de un vistazo.</p>
+          <ul>
+            <li>Total de carreras, porcentaje despachado, promedio por día y hora pico.</li>
+            <li>Carreras por hora del día y tendencia diaria.</li>
+            <li>Hoy, últimos 7 o 30 días, este mes, el mes anterior o el rango que elijas.</li>
+          </ul>
+        </div>
+        <div class="ventana"><img src="img/capturas/estadisticas.webp" width="1920" height="1000" loading="lazy" alt="Pantalla Estadísticas con totales, gráfico de carreras por hora del día y tendencia diaria."></div>
+      </div>
+
+      <div class="panel" role="tabpanel" id="panel-celulares" aria-labelledby="tab-celulares" hidden>
+        <div class="texto">
+          <h3>Celulares</h3>
+          <p>Conecta el celular de la central con TaxiCentral Móvil.</p>
+          <ul>
+            <li>Se empareja escribiendo en el celular un código de 6 dígitos.</li>
+            <li>Muestra cada llamada: sonando, contestada, finalizada o perdida, con su duración.</li>
+            <li>Distingue las llamadas normales de las de WhatsApp.</li>
+          </ul>
+        </div>
+        <div class="ventana"><img src="img/capturas/celulares.webp" width="1920" height="1000" loading="lazy" alt="Pantalla Celulares con el código para emparejar, el celular conectado y las llamadas recibidas."></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion" id="llamadas">
+    <div class="contenedor">
+      <header>
+        <h2>Dos formas de recibir las llamadas</h2>
+        <p>Usa una, la otra o las dos a la vez: todas llegan a la misma pantalla de Despacho.</p>
+      </header>
+      <div class="columnas">
+        <article class="tarjeta">
+          <div class="icono icono-azul"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22v-5"/><path d="M9 8V2"/><path d="M15 8V2"/><path d="M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z"/></svg></div>
+          <h3>Centralita telefónica</h3>
+          <p>La centralita se conecta a la computadora con un cable USB-serial. TaxiCentral lee el número de cada llamada que entra y en qué línea suena.</p>
+          <p>Si se desconecta el cable, vuelve a conectarse sola.</p>
+        </article>
+        <article class="tarjeta">
+          <div class="icono icono-amarillo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg></div>
+          <h3>Celular de la central</h3>
+          <p>Con la app TaxiCentral Móvil, las llamadas que entran al celular, normales y de WhatsApp, llegan a la computadora por el Wi‑Fi de la central.</p>
+          <p>Los datos viajan directo del celular a la PC, sin pasar por internet.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion seccion-alterna" id="movil">
+    <div class="contenedor movil">
+      <div class="movil-icono"><img src="img/logo.svg" alt="" width="84" height="84"></div>
+      <div>
+        <h2>TaxiCentral Móvil</h2>
+        <p class="nota" style="margin-top:0">App para Android 10 o superior</p>
+        <ul>
+          <li>Encuentra sola la computadora con TaxiCentral en la misma red Wi‑Fi.</li>
+          <li>Envía las llamadas normales y las de WhatsApp.</li>
+          <li>Funciona en segundo plano y arranca sola al encender el celular.</li>
+          <li>No tiene publicidad y no envía nada por internet.</li>
+        </ul>
+        <span class="pronto">Pronto en Google Play</span>
+        <p class="nota"><a href="movil/privacidad.html">Política de privacidad de TaxiCentral Móvil</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion" id="requisitos">
+    <div class="contenedor">
+      <header>
+        <h2>Requisitos</h2>
+        <p>Funciona en la computadora que ya tiene tu central.</p>
+      </header>
+      <ul class="lista-requisitos">
+        <li><strong>Windows 10 u 11</strong><span>Computadora de 64 bits.</span></li>
+        <li><strong>Internet para activar</strong><span>La licencia se valida por internet. Si se corta la conexión, TaxiCentral sigue funcionando hasta 3 días.</span></li>
+        <li><strong>Centralita telefónica <em class="opcional">opcional</em></strong><span>Con salida de datos de llamadas y un adaptador USB-serial con chip Prolific.</span></li>
+        <li><strong>Celular Android <em class="opcional">opcional</em></strong><span>Android 10 o superior con TaxiCentral Móvil, en la misma red Wi‑Fi que la computadora.</span></li>
+      </ul>
+      <p class="nota">TaxiCentral se usa con una licencia por empresa: cada central recibe una clave para activarlo en sus computadoras.</p>
+    </div>
+  </section>
+
+  <section class="seccion seccion-alterna contacto" id="contacto">
+    <div class="contenedor">
+      <header>
+        <h2>¿Quieres TaxiCentral en tu central?</h2>
+        <p>Escríbenos y te contamos los planes o coordinamos una demostración.</p>
+      </header>
+      <a class="boton boton-principal" href="mailto:luis.anguisaca.dev@gmail.com?subject=TaxiCentral">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        Escríbenos por correo
+      </a>
+      <span class="correo">luis.anguisaca.dev@gmail.com</span>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <span>© 2026 Cheveryluis</span>
+    <nav aria-label="Legal">
+      <a href="privacidad.html">Política de privacidad de TaxiCentral</a>
+      <a href="movil/privacidad.html">Política de privacidad de TaxiCentral Móvil</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  // Pestañas de Funciones: clic, y flechas izquierda/derecha entre pestañas.
+  const pestanas = [...document.querySelectorAll('[role="tab"]')];
+  function elegir(pestana) {
+    for (const p of pestanas) {
+      const activa = p === pestana;
+      p.setAttribute('aria-selected', activa);
+      p.tabIndex = activa ? 0 : -1;
+      document.getElementById(p.getAttribute('aria-controls')).hidden = !activa;
+    }
+  }
+  pestanas.forEach((p, i) => {
+    p.addEventListener('click', () => elegir(p));
+    p.addEventListener('keydown', (e) => {
+      const paso = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+      if (!paso) return;
+      const siguiente = pestanas[(i + paso + pestanas.length) % pestanas.length];
+      elegir(siguiente);
+      siguiente.focus();
+    });
+  });
+</script>
+</body>
+</html>
