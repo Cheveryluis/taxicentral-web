@@ -34,9 +34,8 @@
       <a href="#llamadas">Llamadas</a>
       <a href="#movil">App móvil</a>
       <a href="#requisitos">Requisitos</a>
-      <a href="#planes">Planes</a>
     </nav>
-    <a class="boton boton-principal boton-chico" href="#contacto">Contacto</a>
+    <a class="boton boton-principal boton-pequeno" href="#contacto">Contacto</a>
   </div>
 </header>
 
@@ -46,7 +45,7 @@
     <div class="contenedor">
       <span class="etiqueta">Para centrales y cooperativas de taxis</span>
       <h1>Cuando suena el teléfono, ya sabes quién llama.</h1>
-      <p class="bajada">TaxiCentral es el programa de despacho para tu central: recibe las llamadas de la centralita y del celular, busca al cliente por su número, elige entre las unidades disponibles la que más tiempo lleva esperando y guarda cada carrera.</p>
+      <p class="subtitulo">TaxiCentral es el programa de despacho para tu central: recibe las llamadas de la centralita y del celular, busca al cliente por su número, elige entre las unidades disponibles la que más tiempo lleva esperando y guarda cada carrera.</p>
       <div class="acciones">
         <a class="boton boton-principal" href="#contacto">Pide una demostración</a>
         <a class="boton boton-secundario" href="#funciones">Ver cómo funciona</a>
@@ -57,7 +56,7 @@
           <div class="botones"><span>&#8212;</span><span>&#9744;</span><span>&#10005;</span></div>
         </div>
         <img src="img/capturas/despacho.webp" width="1920" height="1000" fetchpriority="high"
-             alt="Pantalla Despacho de TaxiCentral: arriba, las llamadas que entran con el número, el código y el nombre del cliente; abajo, las carreras en curso con la unidad asignada y el tiempo de espera.">
+             alt="Pantalla Despacho de TaxiCentral: arriba, las llamadas que entran con el número, el código y el nombre del cliente; abajo, las carreras en curso con la unidad asignada y el tiempo de espera; a la derecha, el mapa con cada carrera.">
       </div>
     </div>
   </section>
@@ -114,20 +113,23 @@
             <li>El código del cliente y la unidad, en grande, para encontrarlos de un vistazo.</li>
             <li>Escribe las unidades disponibles y TaxiCentral elige la que más tiempo lleva sin carrera.</li>
             <li>Un cronómetro por carrera se pone en rojo si pasa el tiempo prometido.</li>
-            <li>Finaliza, cancela o marca como desatendida y queda en el historial.</li>
+            <li>Mapa de la ciudad con buscador de calles: ubica cada carrera y copia su dirección con el enlace de Google Maps, lista para enviarla por WhatsApp.</li>
+            <li>Reservas para más tarde, con un aviso 20 minutos antes de la hora.</li>
+            <li>Lista negra: avisa cuando llama un número que no paga o hace llamadas falsas.</li>
+            <li>Cada carrera se finaliza, se cancela o se marca como desatendida, y queda en el historial.</li>
           </ul>
         </div>
-        <div class="ventana"><img src="img/capturas/despacho.webp" width="1920" height="1000" loading="lazy" alt="Pantalla Despacho con llamadas entrantes y carreras en curso."></div>
+        <div class="ventana"><img src="img/capturas/despacho.webp" width="1920" height="1000" loading="lazy" alt="Pantalla Despacho con llamadas entrantes, carreras en curso, aviso de reserva y el mapa con las carreras."></div>
       </div>
 
       <div class="panel" role="tabpanel" id="panel-clientes" aria-labelledby="tab-clientes" hidden>
         <div class="texto">
           <h3>Clientes</h3>
-          <p>La ficha de cada cliente: dos teléfonos, sector, dirección y referencia.</p>
+          <p>La ficha de cada cliente: dos teléfonos, dirección con su sector, referencia y su ubicación en el mapa.</p>
           <ul>
             <li>Búsqueda por nombre, teléfono, dirección o cualquier otra columna, sin importar tildes ni mayúsculas.</li>
-            <li>Envía un cliente a Despacho sin volver a escribir sus datos.</li>
-            <li>Muestra los clientes que llevan más de un año sin pedir.</li>
+            <li>Envía un cliente a Despacho sin volver a escribir sus datos; si tiene ubicación, el mapa se centra en ella.</li>
+            <li>Muestra los clientes que llevan más de un año sin pedir un taxi.</li>
             <li>Descarga la lista a Excel.</li>
           </ul>
         </div>
@@ -141,7 +143,7 @@
           <ul>
             <li>Cédula, celular, correo, placa, registro municipal, marca, modelo y año.</li>
             <li>Separa socios y no socios de la cooperativa.</li>
-            <li>Lleva la hora de la última salida de cada unidad para repartir los turnos.</li>
+            <li>Registra la hora de la última salida de cada unidad para repartir los turnos con equidad.</li>
             <li>Descarga la lista a Excel.</li>
           </ul>
         </div>
@@ -155,7 +157,7 @@
           <ul>
             <li>Cuenta las despachadas, desatendidas y canceladas del día.</li>
             <li>Búsqueda por cliente, teléfono, unidad o dirección.</li>
-            <li>Descarga a Excel.</li>
+            <li>Descarga la lista a Excel.</li>
           </ul>
         </div>
         <div class="ventana"><img src="img/capturas/historial.webp" width="1920" height="1000" loading="lazy" alt="Pantalla Historial con las carreras de un día: hora, cliente, dirección, unidad y tiempo."></div>
@@ -170,7 +172,7 @@
             <li>Carreras por hora del día y tendencia diaria.</li>
             <li>Carreras de cada unidad en el horario que elijas, por ejemplo de 22:00 a 06:00.</li>
             <li>Hoy, últimos 7 o 30 días, este mes, el mes anterior o el rango que elijas.</li>
-            <li>Descarga en Excel, con sus gráficos, o en PDF.</li>
+            <li>Descarga a Excel, con sus gráficos, o a PDF.</li>
           </ul>
         </div>
         <div class="ventana"><img src="img/capturas/estadisticas.webp" width="1920" height="1000" loading="lazy" alt="Pantalla Estadísticas con totales, gráfico de carreras por hora del día y tendencia diaria."></div>
@@ -195,20 +197,20 @@
     <div class="contenedor">
       <header>
         <h2>Dos formas de recibir las llamadas</h2>
-        <p>Usa una, la otra o las dos a la vez: todas llegan a la misma pantalla de Despacho.</p>
+        <p>Puedes usar una, la otra o las dos a la vez: todas llegan a la misma pantalla de Despacho.</p>
       </header>
       <div class="columnas">
         <article class="tarjeta">
           <div class="icono icono-azul"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22v-5"/><path d="M9 8V2"/><path d="M15 8V2"/><path d="M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z"/></svg></div>
           <h3>Centralita telefónica</h3>
           <p>La centralita se conecta a la computadora con un cable USB-serial. TaxiCentral lee el número de cada llamada que entra y en qué línea suena.</p>
-          <p>Si se desconecta el cable, vuelve a conectarse sola.</p>
+          <p>Si el cable se desconecta, TaxiCentral se reconecta automáticamente.</p>
         </article>
         <article class="tarjeta">
           <div class="icono icono-amarillo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg></div>
           <h3>Celular de la central</h3>
           <p>Con la app TaxiCentral Móvil, las llamadas que entran al celular, normales y de WhatsApp, llegan a la computadora por el Wi‑Fi de la central.</p>
-          <p>Los datos viajan directo del celular a la PC, sin pasar por internet.</p>
+          <p>Los datos van directamente del celular a la computadora, sin pasar por internet.</p>
         </article>
       </div>
     </div>
@@ -222,8 +224,8 @@
         <p class="nota" style="margin-top:0">App para Android 10 o superior</p>
         <ul>
           <li>Envía a TaxiCentral las llamadas normales y también las de WhatsApp.</li>
-          <li>Encuentra sola la computadora con TaxiCentral en la misma red Wi‑Fi.</li>
-          <li>Funciona en segundo plano y arranca sola al encender el celular.</li>
+          <li>Encuentra automáticamente la computadora con TaxiCentral en la misma red Wi‑Fi.</li>
+          <li>Funciona en segundo plano y se inicia al encender el celular.</li>
           <li>No tiene publicidad y no envía nada por internet.</li>
         </ul>
         <p class="nota"><a href="movil/privacidad.html">Política de privacidad de TaxiCentral Móvil</a></p>
@@ -239,7 +241,7 @@
       </header>
       <ul class="lista-requisitos">
         <li><strong>Windows 10 u 11</strong><span>Computadora de 64 bits con 4 GB de memoria (se recomiendan 8 GB) y pantalla de 1366×768 o más.</span></li>
-        <li><strong>Dos interfaces</strong><span>La moderna, la de las capturas, y la ligera, que usa menos memoria y anda en computadoras sin tarjeta gráfica.</span></li>
+        <li><strong>Cualquier tarjeta gráfica</strong><span>Si la computadora no tiene tarjeta gráfica o la suya falla, TaxiCentral funciona igual. El tamaño de los textos y botones se adapta a pantallas grandes y pequeñas.</span></li>
         <li><strong>Internet para activar</strong><span>La licencia se valida por internet. Si se corta la conexión, TaxiCentral sigue funcionando hasta 3 días.</span></li>
         <li><strong>Centralita telefónica <em class="opcional">opcional</em></strong><span>Con salida de datos de llamadas y un adaptador USB-serial con chip Prolific.</span></li>
         <li><strong>Celular Android <em class="opcional">opcional</em></strong><span>Android 10 o superior con TaxiCentral Móvil, en la misma red Wi‑Fi que la computadora.</span></li>
@@ -248,43 +250,11 @@
     </div>
   </section>
 
-  <section class="seccion seccion-alterna" id="planes">
-    <div class="contenedor">
-      <header>
-        <h2>Planes</h2>
-        <p>Un precio fijo al mes según cuántos taxis tiene tu central. Todos los planes traen todas las funciones y las actualizaciones.</p>
-      </header>
-      <ul class="planes">
-        <li>
-          <strong>Básico</strong>
-          <span class="rango">Hasta 25 taxis</span>
-          <span class="precio">$50<small>/mes</small></span>
-        </li>
-        <li>
-          <strong>Estándar</strong>
-          <span class="rango">De 26 a 50 taxis</span>
-          <span class="precio">$75<small>/mes</small></span>
-        </li>
-        <li>
-          <strong>Profesional</strong>
-          <span class="rango">De 51 a 100 taxis</span>
-          <span class="precio">$150<small>/mes</small></span>
-        </li>
-        <li>
-          <strong>Empresarial</strong>
-          <span class="rango">De 101 a 200 taxis</span>
-          <span class="precio">$300<small>/mes</small></span>
-        </li>
-      </ul>
-      <p class="nota">Más de 200 taxis: $300 al mes más $1,50 por cada taxi adicional. Precios en dólares, no incluyen IVA. Se cuentan las unidades registradas en Conductores.</p>
-    </div>
-  </section>
-
-  <section class="seccion contacto" id="contacto">
+  <section class="seccion seccion-alterna contacto" id="contacto">
     <div class="contenedor">
       <header>
         <h2>¿Quieres TaxiCentral en tu central?</h2>
-        <p>Escríbenos y coordinamos una demostración o la instalación en tu central.</p>
+        <p>Escríbenos y coordinamos una demostración. El precio lo acordamos según el tamaño de tu central.</p>
       </header>
       <a class="boton boton-principal" href="mailto:luis.anguisaca.dev@gmail.com?subject=TaxiCentral">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>

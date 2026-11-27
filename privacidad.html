@@ -22,14 +22,14 @@
       <img src="img/logo.svg" alt="" width="34" height="34">
       <span>Taxi<b>Central</b></span>
     </a>
-    <a class="boton boton-secundario boton-chico" href="./" style="margin-left:auto">Volver al inicio</a>
+    <a class="boton boton-secundario boton-pequeno" href="./" style="margin-left:auto">Volver al inicio</a>
   </div>
 </header>
 
 <main class="contenedor documento">
 
 <h1>Política de privacidad de TaxiCentral</h1>
-<p class="fecha">Última actualización: 11 de octubre de 2026</p>
+<p class="fecha">Última actualización: 26 de noviembre de 2026</p>
 
 <p>TaxiCentral es un programa para Windows, desarrollado por Cheveryluis, que usan las centrales de taxis para despachar carreras. Esta política explica qué datos maneja el programa, dónde se guardan y qué sale de la computadora.</p>
 <p>Para la app de Android que envía las llamadas del celular a TaxiCentral, ver la <a href="movil/privacidad.html">política de privacidad de TaxiCentral Móvil</a>.</p>
@@ -37,20 +37,24 @@
 <h2>En resumen</h2>
 <ul class="resumen">
   <li>Los datos de la central (clientes, conductores, carreras y llamadas) se guardan solo en la computadora donde está instalado TaxiCentral. No se suben a internet y el desarrollador no tiene acceso a ellos.</li>
-  <li>Por internet solo viaja lo necesario para validar la licencia: la clave de licencia, un identificador de la computadora y la versión del programa.</li>
+  <li>Por internet viaja lo necesario para validar la licencia (la clave de licencia, un identificador de la computadora y la versión del programa) y, al usar el mapa de Despacho, la zona de la ciudad que se consulta y lo que se escribe en su buscador.</li>
   <li>No tiene publicidad, analíticas ni seguimiento, y no vende ni comparte datos.</li>
 </ul>
 
 <h2>Datos que se guardan en la computadora</h2>
-<p>TaxiCentral guarda todo en la carpeta <code>%LOCALAPPDATA%\TaxiCentral</code> de la cuenta de Windows donde se usa:</p>
+<p>TaxiCentral guarda sus datos en la carpeta <code>%LOCALAPPDATA%\TaxiCentral</code> de la cuenta de Windows donde se usa (las imágenes del mapa, aparte):</p>
 <ul>
-  <li><strong>Clientes:</strong> nombre, teléfonos, sector, dirección, referencia y fecha del último pedido.</li>
+  <li><strong>Clientes:</strong> nombre, teléfonos, dirección (con su sector), referencia, su ubicación en el mapa y fecha del último pedido.</li>
   <li><strong>Conductores:</strong> número de unidad, nombres y apellidos, cédula, celular, correo, placa, marca, modelo y año del vehículo, cooperativa, si es socio y la hora de su última salida.</li>
-  <li><strong>Carreras:</strong> fecha y hora, cliente, teléfono, sector, dirección, referencia, unidad, tiempo estimado, nota y estado (despachada, cancelada o desatendida).</li>
-  <li><strong>Registro de actividad:</strong> qué clientes y conductores se agregaron, cambiaron o borraron, y cuándo.</li>
+  <li><strong>Carreras:</strong> fecha y hora, cliente, teléfono, dirección, referencia, ubicación en el mapa, unidad, tiempo estimado, nota y estado (despachada, cancelada o desatendida).</li>
+  <li><strong>Reservas:</strong> el día y la hora de la cita, cliente, teléfono, dirección, referencia, unidad y nota.</li>
+  <li><strong>Lista negra:</strong> los teléfonos de quienes no reciben un taxi y, si son clientes, su código, con el motivo y desde cuándo.</li>
+  <li><strong>Registro de actividad:</strong> qué clientes, conductores, reservas y entradas de la lista negra se agregaron, cambiaron o borraron, y cuándo.</li>
   <li><strong>Celulares emparejados:</strong> el nombre de cada celular y una huella de su clave de acceso (no la clave misma).</li>
   <li><strong>Licencia:</strong> la clave de licencia, el nombre de la empresa, la fecha hasta la que está pagada y cuándo se validó por última vez.</li>
   <li><strong>Registro de errores:</strong> detalles técnicos de las fallas del programa, para poder diagnosticarlas.</li>
+  <li><strong>Copias de seguridad:</strong> una copia de todo lo anterior por día, de los últimos 7 días.</li>
+  <li><strong>Mapa:</strong> la última zona que mostró el mapa y, en la carpeta <code>%LOCALAPPDATA%\QtLocation</code>, las imágenes de las calles ya descargadas, para verlas sin volver a pedirlas.</li>
 </ul>
 <p>Estos datos los escribe el personal de la central. La central (la empresa que usa TaxiCentral) es la responsable de ellos: decide qué registra y cuánto tiempo lo conserva.</p>
 
@@ -63,29 +67,32 @@
 
 <h2>Qué sale por internet</h2>
 <ul>
-  <li><strong>Validación de la licencia.</strong> Al abrir el programa y cada 10 minutos mientras está abierto, TaxiCentral envía al servidor de licencias del desarrollador la clave de licencia, el identificador que Windows asigna a la computadora y la versión del programa. El servidor contesta con el nombre de la empresa, la fecha hasta la que está pagada y si la licencia está activa. También anota qué computadoras usan cada licencia y cuándo se validaron por última vez, para respetar el número de equipos de cada empresa.</li>
+  <li><strong>Validación de la licencia.</strong> Al abrir el programa y cada 10 minutos mientras está abierto, TaxiCentral envía al servidor de licencias del desarrollador la clave de licencia, el identificador que Windows asigna a la computadora y la versión del programa. El servidor responde con el nombre de la empresa, la fecha hasta la que está pagada y si la licencia está activa. También anota qué computadoras usan cada licencia y cuándo se validaron por última vez, para respetar el número de equipos de cada empresa.</li>
   <li><strong>Cerrar sesión.</strong> Al cerrar sesión en TaxiCentral, se le pide al servidor que borre el registro de esa computadora.</li>
   <li><strong>Comprobación de conexión.</strong> Para saber si hay internet, TaxiCentral abre una conexión con un servidor público de Google (8.8.8.8), sin enviarle datos.</li>
-  <li>El servidor de licencias funciona en Supabase. Como cualquier servicio en internet, el proveedor puede registrar la dirección IP de las conexiones en sus registros técnicos.</li>
-  <li>Ningún dato de clientes, conductores, carreras o llamadas se envía por internet.</li>
+  <li><strong>Mapa de Despacho.</strong> Para dibujar el mapa, TaxiCentral descarga las imágenes de las calles de los servidores de OpenStreetMap, que por eso conocen la zona de la ciudad que se consulta.</li>
+  <li><strong>Buscador del mapa.</strong> Lo que se escribe en el buscador del mapa (una calle, un cruce o un lugar) se envía, junto con la zona que muestra el mapa, a Photon (de komoot) y, si este no responde, a Nominatim (de OpenStreetMap), para encontrarlo. Solo se envía lo que se escribe ahí: TaxiCentral no busca por su cuenta las direcciones de los clientes ni de las carreras.</li>
+  <li><strong>Enlaces de Google Maps.</strong> Si se pega en el buscador un enlace corto de Google Maps, TaxiCentral se lo pide a Google para saber a qué punto lleva. El botón «Google Maps» abre el punto en el navegador de la computadora.</li>
+  <li>El servidor de licencias funciona en Supabase. Como cualquier servicio en internet, Supabase y los servidores del mapa pueden registrar la dirección IP de las conexiones en sus registros técnicos.</li>
+  <li>Fuera de lo que se escribe en el buscador del mapa, ningún dato de clientes, conductores, carreras o llamadas se envía por internet.</li>
 </ul>
 
 <h2>Red local</h2>
-<p>Para recibir las llamadas de los celulares, TaxiCentral espera conexiones en el puerto 5050 y contesta en el puerto 5051 a los celulares que buscan la computadora, con el nombre de la computadora. Solo acepta celulares emparejados con el código de 6 dígitos que muestra en pantalla.</p>
+<p>Para recibir las llamadas de los celulares, TaxiCentral espera conexiones en el puerto 5050 y responde en el puerto 5051 a los celulares que buscan la computadora, con el nombre de la computadora. Solo acepta celulares emparejados con el código de 6 dígitos que muestra en pantalla.</p>
 
 <h2>Seguridad</h2>
 <ul>
   <li>Los datos quedan en la carpeta de la cuenta de Windows. Recomendamos proteger esa cuenta con contraseña y que solo la use el personal de la central.</li>
   <li>La conexión con los celulares no usa cifrado adicional: los datos viajan solo dentro de la red Wi‑Fi local. Recomendamos una red Wi‑Fi protegida con contraseña (WPA2 o WPA3) a la que solo tenga acceso el personal de la central.</li>
-  <li>La comunicación con el servidor de licencias va cifrada (HTTPS).</li>
-  <li>Las copias de seguridad de los datos son responsabilidad de la central.</li>
+  <li>La comunicación con el servidor de licencias y con los del mapa va cifrada (HTTPS).</li>
+  <li>TaxiCentral guarda una copia diaria de los datos en la misma computadora. Contra la pérdida, el robo o la avería de la computadora, guardar una copia en otro lugar es responsabilidad de la central.</li>
 </ul>
 
 <h2>Cuánto tiempo se guardan y cómo borrarlos</h2>
 <ul>
-  <li><strong>En la computadora:</strong> los datos se guardan hasta que la central los borra desde el programa. Para borrar todo, cierra TaxiCentral y borra la carpeta <code>%LOCALAPPDATA%\TaxiCentral</code>.</li>
+  <li><strong>En la computadora:</strong> los datos se guardan hasta que la central los borra desde el programa. Para borrar todo, cierra TaxiCentral y borra las carpetas <code>%LOCALAPPDATA%\TaxiCentral</code> y <code>%LOCALAPPDATA%\QtLocation</code>.</li>
   <li><strong>En el servidor de licencias:</strong> los datos de la empresa se guardan mientras use TaxiCentral. El registro de cada computadora se borra al cerrar sesión, o cuando la empresa lo pida.</li>
-  <li><strong>Si llamaste a una central de taxis</strong> y quieres que borre tu número o tus datos, pídeselo a esa central; también puedes escribirnos al correo de abajo.</li>
+  <li><strong>Si has llamado a una central de taxis</strong> y quieres que borre tu número o tus datos, pídeselo a esa central; también puedes escribirnos al correo de abajo.</li>
 </ul>
 
 <h2>Niños</h2>
